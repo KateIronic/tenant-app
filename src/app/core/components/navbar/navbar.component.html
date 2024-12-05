@@ -1,0 +1,23 @@
+<nav class="w-full h-20 bg-black text-white flex items-center justify-center">
+  <div
+    class="bg-transparent fixed border border-black rounded-r-full rounded-l-full h-16 w-[80%] mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="mx-10">
+      <img src="" alt="Logo" />
+    </div>
+
+    <!-- Dynamic Navigation Links -->
+    <div class="flex justify-center items-center">
+      <a *ngFor="let item of navItems" [routerLink]="item.link" routerLinkActive="active"
+        class="mx-5 hover:underline cursor-pointer transition-all duration-300">
+        {{ item.label }}
+      </a>
+    </div>
+
+    <!-- Register Button -->
+    <button (click)="onRegister()"
+      class="h-8 bg-yellow-950 text-yellow-500 w-20 rounded-r-full rounded-l-full mx-10 font-semibold hover:bg-yellow-900 hover:text-yellow-400 transition-all duration-300">
+      Register
+    </button>
+  </div>
+</nav>
