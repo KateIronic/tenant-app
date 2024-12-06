@@ -22,6 +22,8 @@
     "@angular/router": "^18.0.0",
     "@angular/ssr": "^18.0.2",
     "express": "^4.18.2",
+    "ngx-toastr": "^19.0.0",
+    "node": "^22.12.0",
     "rxjs": "~7.8.0",
     "tenant-app": "file:",
     "tslib": "^2.3.0",
